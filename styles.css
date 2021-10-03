@@ -234,3 +234,49 @@ a:active {
     margin-top: 10px;
     margin-left: 20px;
 }
+
+.team-section-header {
+    margin: 30px;
+    min-height: 30vh;
+    border-bottom: 2px solid black;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.grid-item {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;;
+
+}
+
+.team-image {
+    width: 100%;
+    overflow: hidden;
+}
+
+.team-name {
+    font-size: 32px;
+    font-weight: 600;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 12px;
+}
+
+.team-position {
+    font-size: 26px;
+    font-weight: 400;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6px;
+}
+
+.team-description {
+    text-align: center;
+    padding: 20px;
+    font-weight: 400;
+}

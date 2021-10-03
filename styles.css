@@ -65,6 +65,7 @@ a:active {
 .featured-projects {
     margin: 30px;
     min-height: 100vh;
+    border-bottom: 2px solid black;
 }
 
 .featured-container {
@@ -101,4 +102,33 @@ a:active {
     font-size: 36px;
     text-align: center;
     margin-top: 8px;
+}
+
+.quote-section {
+    margin: 30px;
+    min-height: 14vh;
+    border-bottom: 2px solid black;
+}
+
+.quote-header-container {
+    padding-top: 18px;
+    text-align: center;
+}
+
+.quote-header-text {
+    font-size: 48px;
+    font-weight: 600;
+    padding-bottom: 18px;
+}
+
+.quote-text-container {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;   
+}
+
+.quote-text {
+    font-size: 18px;
+    padding-bottom: 18px;
 }

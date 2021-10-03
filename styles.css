@@ -61,3 +61,44 @@ a:hover {
 a:active {
     color: black;
 }
+
+.featured-projects {
+    margin: 30px;
+    min-height: 100vh;
+}
+
+.featured-container {
+    width: 100%;
+    font-weight: bold;
+    text-align: center;
+}
+
+.featured-header {
+    font-size: 42px;
+}
+
+.project-container {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.project-item {
+    padding: 10px;
+}
+
+.project-image {
+    width: 100%;
+    overflow: hidden;
+}
+
+.project-title {
+    font-size: 36px;
+    text-align: center;
+    margin-top: 8px;
+}

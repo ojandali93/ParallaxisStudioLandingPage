@@ -117,8 +117,9 @@ a:active {
 }
 
 .quote-header-text {
-    font-size: 48px;
+    font-size: 36px;
     font-weight: 600;
+    padding-bottom: 12px;
 }
 
 .quote-text-container {
@@ -172,4 +173,64 @@ a:active {
     color: white;
     background-color: black;
     margin-top: 10px;
+}
+
+.newsletter-section {
+    margin: 30px;
+    min-height: 12vh;
+    border-bottom: 2px solid black;
+    padding-bottom: 16px;
+}
+
+.newsletter-header-container {
+    width: 100%;
+    padding-top: 18px;
+    text-align: center;
+}
+
+.newsletter-header-text {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.signup-text-container {
+    text-align: center;
+}
+
+.newsletter-signup-container {
+    padding: 10px;
+    font-size: 18px;
+    margin: 14px;
+    display: flex;
+    flex-direction: column;
+}
+
+.newsletter-signup-text {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 16px;
+}
+
+.newsletter-signup-input {
+    border: 0px;
+    border-bottom: 2px solid black;
+    width: 250px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.newsletter-signup-form {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.newsletter-signup-submit {
+    width: 70px;
+    height: 30px;
+    font-size: 13px;
+    border-radius: 5px;
+    color: white;
+    background-color: black;
+    margin-top: 10px;
+    margin-left: 20px;
 }

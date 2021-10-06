@@ -76,7 +76,7 @@ const members = [
         description: "I am currently a portrait and landscape photographer and videographer. I have had a short but yeailding career. I started just taking photos and videos that I posted on my social media account. I got a pretty big following and then decided to join parallaxis media. "
     },
     {
-        image: "./inages/pexels-andrea-piacquadio-774909.jp",
+        image: "./inages/pexels-andrea-piacquadio-774909.jpg",
         name: "ASHLEY GALLOWS",
         position: "Photographer/Videographer",
         description: "As a part time real estate agent, real estate is a passion of mine. with that being said, I naturally got curious and started building my real estate photography and videography career. It is a new found passion of mine that I am currently building and developing."
@@ -105,8 +105,7 @@ function CreateFeaturedGridItem(){
         newMomentsDiv.appendChild(newMomentsImage)
         newMomentsDiv.appendChild(newMomentsTitle)
         featuredMomentsDiv.appendChild(newMomentsDiv)
-    }
-    
+    } 
 }
 
 function CreateProjectsGridItem(){
@@ -154,7 +153,32 @@ function CreateProjectsGridItem(){
     }
 }
 
+function CreateTeamGridItem(){
+    for(let i = 0; i < members.length; i++){
+        const gridContainer = document.createElement('div')
+        gridContainer.className = 'grid-item'
+        const teamImage = document.createElement('img')
+        teamImage.className = 'team-image'
+        teamImage.src = members[i]['image']
+        const teamName = document.createElement('p')
+        teamName.className = 'team-name'
+        teamName.src = members[i]['name']
+        const teamPosition = document.createElement('p')
+        teamPosition.className = 'team-position'
+        teamPosition.src = members[i]['position']
+        const teamDescription = document.createElement('p')
+        teamDescription.className = 'team-description'
+        teamDescription.src = members[i]['description']
 
+        gridContainer.appendChild(teamImage)
+        gridContainer.appendChild(teamName)
+        gridContainer.appendChild(teamPosition)
+        gridContainer.appendChild(teamDescription)
+
+        featuredTeamDiv.appendChild(gridContainer)
+    }
+}
 
 CreateFeaturedGridItem();
 CreateProjectsGridItem();
+CreateTeamGridItem();

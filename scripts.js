@@ -109,5 +109,52 @@ function CreateFeaturedGridItem(){
     
 }
 
+function CreateProjectsGridItem(){
+    for(let i = 0; i < projects.length; i++){
+        const imageContainerDiv = document.createElement('div')
+        imageContainerDiv.className = 'featured-image-container'
+        const imageContainerImage = document.createElement('img')
+        imageContainerImage.className = 'featured-image featured-image-1'
+        imageContainerImage.src = projects[i]['image']
+        
+        const textContainer = document.createElement('div')
+        textContainer.className = 'featured-text-container'
+        const textContent = document.createElement('div')
+        textContent.className = 'featured-text-content'
+        const textHeader = document.createElement('p')
+        textHeader.className = 'featured-text-header'
+        textHeader.innerHTML = projects[i]['title']
+        const textSubheader = document.createElement('p')
+        textSubheader.className = 'featured-text-subheader'
+        textSubheader.innerHTML = projects[i]['subtitle']
+        const textDescription = document.createElement('p')
+        textDescription.className = 'featured-text-description'
+        textDescription.innerHTML = projects[i]['text']
+        const textButton = document.createElement('button')
+        textButton.className = 'learn-more-button'
+        textButton.innerHTML = 'LEARN MORE'
+
+        imageContainerDiv.appendChild(imageContainerImage)
+        console.log(imageContainerImage)
+
+        textContainer.appendChild(textContent)
+        textContent.appendChild(textHeader)
+        textContent.appendChild(textSubheader)
+        textContent.appendChild(textDescription)
+        textContent.appendChild(textButton)
+        console.log(textContainer)
+
+        if(i % 2 == 0){
+            featuredProjectsDiv.appendChild(imageContainerDiv)
+            featuredProjectsDiv.appendChild(textContainer)
+        } else {
+            featuredProjectsDiv.appendChild(textContainer)
+            featuredProjectsDiv.appendChild(imageContainerDiv)
+        }
+    }
+}
+
+
+
 CreateFeaturedGridItem();
 CreateProjectsGridItem();

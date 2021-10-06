@@ -134,7 +134,6 @@ function CreateProjectsGridItem(){
         textButton.innerHTML = 'LEARN MORE'
 
         imageContainerDiv.appendChild(imageContainerImage)
-        console.log(imageContainerImage)
 
         textContainer.appendChild(textContent)
         textContent.appendChild(textHeader)
@@ -162,13 +161,13 @@ function CreateTeamGridItem(){
         teamImage.src = members[i]['image']
         const teamName = document.createElement('p')
         teamName.className = 'team-name'
-        teamName.src = members[i]['name']
+        teamName.innerHTML = members[i]['name']
         const teamPosition = document.createElement('p')
         teamPosition.className = 'team-position'
-        teamPosition.src = members[i]['position']
+        teamPosition.innerHTML = members[i]['position']
         const teamDescription = document.createElement('p')
         teamDescription.className = 'team-description'
-        teamDescription.src = members[i]['description']
+        teamDescription.innerHTML = members[i]['description']
 
         gridContainer.appendChild(teamImage)
         gridContainer.appendChild(teamName)
